@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body {
+    background-color: #000000; 
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #FFFF00;
+    text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.3);
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    font-size: 2em;
+    color: #FFFFFF;
+    margin: 10px 0;
+    animation: fadeIn 2s ease-in-out 0.5s;
+}
+
+p {
+    font-size: 1.2em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #FFFF00;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    margin: 0 auto;
+}
+
+#cursor {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: transform 0.5s ease 0s;
+}
+
+::selection{
+    background: yellow;
+    color: black;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media only screen and (orientation:portrait) {
+    *{
+        cursor: auto;
+    }
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 1.5em; }
+    p { font-size: 1em; }
+}
+
+@media only screen and (orientation:landscape){
+    #cursor{
+        height: 20px;
+        width: 20px;
+    }
+}

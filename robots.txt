@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://umairshakoor.vercel.app/sitemap.xml
