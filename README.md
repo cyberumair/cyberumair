@@ -46,7 +46,7 @@ All Rights Reserved.
 
 This repo and its contents are protected by copyright laws. No part of this work may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the copyright owner.
 
-For permissions, contact [gmail](mailto:umairshakoor.pro@gmail.com).
+For permissions, contact [gmail](mailto:umairshakoor.pro@protonmail.com).
 
 ---
 
