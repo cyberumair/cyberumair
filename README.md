@@ -28,17 +28,19 @@ Greetings from my **README repository**! . Join my journey in **Cyber Security**
 ## 📚 Learning Resources
 
 Here are some resources I use to learn:
-- [Youtube - @WS Cube Security](https://www.youtube.com/@WsCubeCyberSecurity)
-- [TryHackMe](https://tryhackme.com/p/umairshakoor)
+- [@WS Cube Security](https://www.youtube.com/@WsCubeCyberSecurity)
+- [TryHackMe](https://tryhackme.com/)
+- [@Code With Harry](https://www.youtube.com/@codewithharry)
 
 ---
 
 ## 🤝 Let’s Connect!
 
 I’m always open to collaboration, feedback, and learning opportunities. Feel free to reach out:
-- [LinkedIn](https://www.linkedin.com/in/theumairshakoor/)
-- [Twitter (X)](https://x.com/theUmairShakoor/)
-- [Dev.to](https://dev.to/umairshakoor/)
+- [LinkedIn](https://www.linkedin.com/in/cyberumairx/)
+- [Twitter (X)](https://x.com/cyberumairx/)
+- [Dev.to](https://dev.to/cyberumair/)
+- [TryHackMe](https://www.tryhackme.com/p/cyberumair/)
 - [Email](mailto:umairshakoor.pro@gmail.com)
 
 ---
