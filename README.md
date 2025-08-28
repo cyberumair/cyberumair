@@ -2,7 +2,13 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" align="right" width="130" />
 
-Greetings from my **README repository**! . Join my journey in **Cyber Security** . I have a strong desire to understand the foundations of cybersecurity and investigate different security procedures. My **code updates**, **learning progress**, and **experiments** as I develop my abilities are all available here.
+Greetings! 👋 Welcome to my **README repository**! 📝  
+
+Join my journey into **Cyber Security** 🛡️ as I explore the **foundations of cybersecurity**, experiment with **Linux**, **Python**, **Networking**, and dive into **ethical hacking** 💻.  
+
+Here, you’ll find my **code updates** 🐍, **learning progress** 📚, and exciting **experiments** ⚡ as I develop my skills and share my journey. 🚀  
+
+Let’s learn, build, and secure the digital world together! 🌐🔒
 
 ---
 
@@ -10,6 +16,7 @@ Greetings from my **README repository**! . Join my journey in **Cyber Security**
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![Cyber Security](https://img.shields.io/badge/Cyber%20Security-FF3C00?style=flat&logo=security&logoColor=white)
+![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-FF5722?style=flat&logo=hackthebox&logoColor=white)
 ![Networking](https://img.shields.io/badge/Networking-0077B3?style=flat&logoColor=white)
 ![TryHackMe](https://img.shields.io/badge/TryHackMe-FF0000?style=flat&logo=tryhackme&logoColor=white)
 ![Kali Linux](https://img.shields.io/badge/Kali%20Linux-268BEE?style=flat&logo=kalilinux&logoColor=white)
