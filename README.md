@@ -8,7 +8,12 @@ Greetings from my **README repository**! . Join my journey in **Cyber Security**
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![Cyber Security](https://img.shields.io/badge/Cyber%20Security-FF3C00?style=flat&logo=security&logoColor=white)
-![Networking](https://img.shields.io/badge/Networking-0077B3?style=flat&logo=networking&logoColor=white)
+![Networking](https://img.shields.io/badge/Networking-0077B3?style=flat&logoColor=white)
+![TryHackMe](https://img.shields.io/badge/TryHackMe-FF0000?style=flat&logo=tryhackme&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-268BEE?style=flat&logo=kalilinux&logoColor=white)
+![Operating System](https://img.shields.io/badge/Operating%20System-009688?style=flat&logo=windows-terminal&logoColor=white)
+![Shell Scripting](https://img.shields.io/badge/Shell%20Scripting-4EAA25?style=flat&logo=gnubash&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 ---
 
