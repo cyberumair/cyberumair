@@ -1,5 +1,7 @@
 # 👋 Hello My name is Umair Shakoor.
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" align="right" width="130" />
+
 Greetings from my **README repository**! . Join my journey in **Cyber Security** . I have a strong desire to understand the foundations of cybersecurity and investigate different security procedures. My **code updates**, **learning progress**, and **experiments** as I develop my abilities are all available here.
 
 ---
