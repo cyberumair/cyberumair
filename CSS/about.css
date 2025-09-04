@@ -19,7 +19,7 @@ main{
   gap: 10px;
   padding: 10px 20px;
   height: 80vh;
-  overflow: scroll;
+  overflow: hidden;
   width: 80vw;
   max-width: 350px;
   margin: 0 auto;

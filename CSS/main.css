@@ -20,7 +20,6 @@ main{
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-
 }
 /* Section1 */
 #content{
@@ -162,6 +161,7 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    overflow: hidden;
   }
   #content{
     padding-left: 7%;
