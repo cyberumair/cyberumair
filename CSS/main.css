@@ -1,0 +1,256 @@
+body{
+  background: var(--secondaryCol);
+}
+
+/* Header */
+.portfolio{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0px 0px 30px var(--primaryCol);
+  color: var(--primaryCol);  
+}
+
+/* Main */
+main{
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+}
+/* Section1 */
+#content{
+  margin-left: 80px;
+  grid-column: 1/2;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+/* Intro Div */
+#intro{
+  width: 450px;
+  order: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#intro h1{
+  order: 1;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-shadow: 0px 0px 20px var(--primaryCol);
+  animation: move-left 1s ease-out 0s;
+}
+#intro h2{
+  order: 2;
+  font-size: 1.6rem;
+  font-weight: 700;
+  animation: move-right 1s ease-out 0s;
+}
+#intro h3{
+  order: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  animation: move-right 1s ease-out 0s;
+}
+#changing-text{
+  color: var(--primaryCol);
+}
+.cursor{
+  color: red;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+/* Resume Download Button */
+#resume{
+  order: 2;
+  width: fit-content;
+  padding: 10px 20px;
+  background: var(--primaryCol);
+  border: 0;
+  border-radius: 10pc;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--secondaryCol);
+}
+#resume:hover{
+  box-shadow: 0px 0px 20px 5px var(--primaryCol);
+}
+#resume a{
+  text-decoration: none;
+  color: var(--secondaryCol);
+}
+/* Section2 */
+#picSec{
+  width: 100%;
+  grid-column: 2/3;
+  transform: scale(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: fit-content;
+  animation: upDown 2s ease 2s infinite;
+  transition: transform 2s ease 0s;
+}
+@keyframes upDown{
+  0%{
+    top: 0px;
+  }
+  50%{
+    top: 20px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+#picCircle{
+  width: 330px;
+  height: 330px;
+  background: linear-gradient(var(--secondaryCol), var(--primaryCol));
+  animation: circleRotate 5s linear infinite;
+  border-radius: 50%;
+  border: 0;
+}
+@keyframes circleRotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+#pic{
+  position: absolute;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#BinaryCanvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Media Query for Taller(Mobile) devices */
+@media only screen and (orientation:portrait){
+  #socialLinks{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+  }
+.portfolio {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 1.35rem;
+}
+  main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #content{
+    padding-left: 7%;
+    width: 100%;
+    order: 1;
+    gap: 15px;
+  }
+  #intro {
+    gap: 8px;
+  }
+  #intro h1{
+    font-size: 2rem;
+  }
+  #intro h2{
+    font-size: 1.2rem;
+  }
+  #intro h3{
+    font-size: 1.2rem;
+  }
+  #changing-text{
+    font-size: 1.1rem;
+  }
+  .cursor{
+    font-size: 1.1rem;
+  }
+  #picSec{
+    overflow: hidden;
+    height: 180px;
+    display: flex;
+    justify-content: right;
+  }
+  #pic{
+    right: 7px;
+    height: 150px;
+  } 
+  #picCircle{
+    width: 164px;
+    height: 164px;
+    background: linear-gradient(45deg,var(--primaryCol),transparent);
+  }
+}
+
+/* Media Query for Wider(Laptops/PC/Tablets) Devices */
+@media only screen and (orientation:landscape){
+  body {
+  padding: 20px 20px 0 20px;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.9vmin;
+  position: relative;
+  z-index: 2;
+  width: 95vw;
+  border-top-right-radius: 50pc;
+  border-bottom-right-radius: 50pc;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.548), #DBFF00DC);
+  }
+  .portfolio{
+  display: inline-block;
+  color: var(--tertiaryCol);
+  }
+  header #socialLinks{
+    right: 10%;
+  }
+  main{
+    width: calc(100vw - 50px);
+    height: 73vh;
+  }
+  #content{
+    align-items: center;
+  }
+  #intro{
+    gap: 18px;
+    margin-left: 10%;
+  }
+  aside{
+    height: 80vh;
+    width: 67px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top,#DBFF00DC, rgba(0, 0, 0, 0.548));
+    border-bottom-left-radius: 50pc;
+    border-bottom-right-radius: 50pc;
+  }
+  main #asideLinks{
+    width: 67px;
+  }
+}

@@ -1,0 +1,102 @@
+*{
+  z-index: 1;
+}
+body{
+  background: url('/Assets/Img/contactMe_bg.jpg'),
+  var(--secondaryCol);
+  background-size: cover;
+}
+body::before{
+  content:'';
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Main */
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section */
+main section {
+  padding: 10px 0 0 30px;
+  width: 80vw;
+  margin: 0 auto;
+}
+h1{
+  margin-bottom: 7px;
+  animation: move-right 1s ease 0s;
+}
+h1 span span{
+  color: var(--primaryCol);
+}
+
+/* Form */
+form{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  animation: move-left 1s ease 0s;
+}
+form label{
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  width: 100%;
+  background: var(--inputBg);
+  border: 1px solid var(--tertiaryCol);
+  border-radius: 7px;
+  padding: 10px;
+  color: var(--tertiaryCol);
+}
+textarea{
+  resize: none;
+}
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible{
+  outline: 0;
+  border: 1px solid var(--primaryCol);
+}
+::placeholder{
+  color: rgba(198, 201, 53, 0.7);
+}
+button{
+  font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+  width: fit-content;
+  padding: 10px 20px;
+  background: var(--primaryCol);
+  border: 0;
+  border-radius: 10pc;
+  font-size: 0.9rem;
+  color: var(--secondaryCol);
+}
+button:focus-visible{
+  outline: 0;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px 5px var(--primaryCol);
+}
+button:hover{
+  box-shadow: 0px 0px 20px 5px var(--primaryCol);
+}
+
+@media only screen and (orientation: portrait){
+  .g-recaptcha{
+    transform: scale(0.8);
+    transform-origin: 0 0;
+  }
+}

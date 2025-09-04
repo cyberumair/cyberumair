@@ -1,0 +1,218 @@
+:root{
+  --primaryCol: yellow;
+  --secondaryCol: black;
+  --tertiaryCol: white;
+  --temp_border: 1px solid red;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none !important;
+}
+body{
+  font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+  color: var(--tertiaryCol);
+  fill: var(--tertiaryCol);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/* Animations */
+/* Moving left to right */
+@keyframes move-right {
+  0% {
+    transform: translateX(100px);
+  }
+  
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* Moving right to left */
+@keyframes move-left {
+  0% {
+    transform: translateX(-100px);
+  }
+  
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* Scaling from 0 to 1 */
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+/* Targetting links */
+.linksTabSpaced:focus-visible {
+  outline: 0;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 20px 0px var(--primaryCol);
+}
+
+main aside #currentPageLink {
+  background: var(--primaryCol);
+  color: var(--secondaryCol);
+  fill: var(--secondaryCol);
+  border: 2px solid rgba(219, 255, 0, 0.6);
+}
+
+/* Header */
+/* Umair Shakoor Logo */
+#logo{
+  position: absolute;
+  top: 0;
+  left: 12%;
+  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+#logo img{
+  height: 5vmin;
+}
+#logo img{
+  height: 5vmin;
+}
+#logo,
+.portfolio,
+#socialLinks,
+#asideLinks{
+  animation: scale 1s ease 0s;
+  z-index: 2;
+}
+
+/* Social Links Styling example Github */
+#socialLinks{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  list-style: none;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#socialLinks a{
+  color: var(--primaryCol);
+  fill: var(--primaryCol);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(219, 255, 0, 0.6);
+  background: rgba(0,0,0, 1);
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  text-decoration: none;
+  transition: transform 0.5s ease 0s;
+}
+#socialLinks a:hover{
+  background: var(--primaryCol);
+  color: var(--secondaryCol);
+  fill: var(--secondaryCol);
+  box-shadow: 0px 0px 20px 0px var(--primaryCol);
+  transform: scale(1.15);
+}
+#socialLinks i{
+  font-size: 19px;
+}
+#socialLinks svg{
+  width: 22px;
+}
+
+/* Aside */
+#asideLinks{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  padding: 10px 29px;
+  width: 40px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#asideLinks a{
+  color: var(--primaryCol);
+  fill: var(--primaryCol);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(219, 255, 0, 0.6);
+  background: var(--secondaryCol);
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  text-decoration: none;
+  transition: transform 0.5s ease 0s;
+}
+#asideLinks a:hover{
+  background: var(--primaryCol);
+  color: var(--secondaryCol);
+  fill: var(--secondaryCol);
+  box-shadow: 0px 0px 20px 0px var(--primaryCol);
+  transform: scale(1.15);
+}
+#asideLinks i{
+  font-size: 19px;
+}
+
+/* Footer */
+footer{
+  position: absolute;
+  z-index: 1;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  padding: 1%;
+  animation: scale 1s ease 0s;
+}
+footer span{
+  font-size: 0.75rem;
+  background: rgba(0, 0, 0, 0.548);
+  border: 1px solid rgba(219, 255, 0, 0.5);
+  border-radius: 20px;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 7px;
+  text-align: center;
+}
+
+::selection{
+  background: var(--secondaryCol);
+  color: var(--primaryCol);
+}
+
+#cursor{
+  position: absolute;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--primaryCol);
+  pointer-events: none;
+}
+
+@media only screen and (orientation:portrait){
+  #logo{
+    padding-left: 10px;
+    left: 0;
+  }
+  #logo img{
+    height: 23px;
+  }
+}

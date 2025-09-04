@@ -1,0 +1,24 @@
+.icon-field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Only show bouncing icons in landscape */
+@media (orientation: landscape) {
+  .float-icon{
+    width: 60px;
+  }
+}
+
+.float-icon {
+        border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+  will-change: transform;
+  user-select: none;
+  -webkit-user-drag: none;
+  opacity: 0.8;
+}
