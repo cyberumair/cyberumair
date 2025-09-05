@@ -215,4 +215,7 @@ footer span{
   #logo img{
     height: 23px;
   }
+  #cursor{
+    display: none !important;
+  }
 }
