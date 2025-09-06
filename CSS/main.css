@@ -66,7 +66,8 @@ main{
 }
 
 /* Resume Download Button */
-#resume{
+#resume-btn{
+  font-family: Arial, Helvetica, sans-serif;
   order: 2;
   width: fit-content;
   padding: 10px 20px;
@@ -76,14 +77,13 @@ main{
   font-weight: 600;
   font-size: 15px;
   color: var(--secondaryCol);
-}
-#resume:hover{
-  box-shadow: 0px 0px 20px 5px var(--primaryCol);
-}
-#resume a{
   text-decoration: none;
   color: var(--secondaryCol);
 }
+#resume-btn:hover{
+  box-shadow: 0px 0px 20px 5px var(--primaryCol);
+}  
+
 /* Section2 */
 #picSec{
   width: 100%;
